@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wise Work - Freelance Services Marketplace</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <script src="../script/firebase.js"></script>
+  <script src="../script/script.js"></script>
+  <link rel="stylesheet" href="../style/footer.css" />
+  <link rel="stylesheet" href="../style/index.css" />
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar from bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-link" href="admin" style="font-size: 2rem;">Wise Work</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="navbar-link" href="chat?admin=true">Customer Complaints</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-link" id="signout-button">Sign Out</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div id="document-data"></div>
+  <script>
+
+    var db = firebase.firestore();
+    const abc = document.getElementById('document-data');
+
+    var users = db.collection("users");
+    var tempHTML = `<table id="userTable" class="table table-striped table-hover"><tr><th>email</th><th>name</th><th>address</th><th>gig titles</th><th>dob</th></tr>`;
+    users
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          if (doc.data()['address'] != null)
+            tempHTML += `<tr><td>${doc.data()['email']}</td><td>${doc.data()['name']}</td><td>${doc.data()['address']}</td><td>${doc.data()['gigTitle']}</td><td>${doc.data()['dob']}</td>
+                  <td><button type="button" class="btn btn-danger delete">Delete</button></td></tr>`
+
+        })
+
+      }).then(() => {
+        tempHTML += `</table>`;
+        abc.innerHTML += tempHTML;
+
+
+        const userTable = document.getElementById('userTable');
+
+        // Add a click event listener to the userTable and use event delegation to handle the delete button clicks
+        userTable.addEventListener('click', function (event) {
+          // Check if the clicked element has a class of 'delete'
+          if (event.target.classList.contains('delete')) {
+            // Get the corresponding table row
+            const row = event.target.closest('tr');
+            // Get the email value from the first cell of the row
+            const email = row.cells[0].textContent;
+
+            // Call the delete function with the email value
+            deleteDocument(email)
+              .then(() => {
+                // Remove the table row from the DOM
+                row.remove();
+                console.log('Document deleted successfully.');
+              })
+              .catch((error) => {
+                console.error('Error deleting document:', error);
+              });
+          }
+        });
+
+
+      })
+      .catch(function (error) {
+        console.log("Error getting document:", error);
+      });
+
+    function deleteDocument(email) {
+      // Get a reference to the Firestore collection
+      const collectionRef = firebase.firestore().collection('users');
+
+      // Query the document(s) with the provided email
+      const query = collectionRef.where('email', '==', email);
+
+      // Delete the document(s) matching the query
+      return query.get()
+        .then((snapshot) => {
+          const batch = firebase.firestore().batch();
+
+          snapshot.forEach((doc) => {
+            batch.delete(doc.ref);
+          });
+
+          // Commit the batch delete operation
+          return batch.commit();
+        });
+    }
+
+
+    const signoutButton = document.getElementById("signout-button");
+    signoutButton.addEventListener("click", (e) => {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          // Sign-out successful.
+          window.location = "http://localhost:4000/"
+        })
+        .catch((error) => {
+          // An error happened.
+          console.error(error);
+        });
+    });
+  </script>
+
+
+
+  <div id="footer"></div>
+</body>
+
+</html>
+
+<!--This script calls footer js file and loads it in the last dic having id "footer". We do this so we don't have to write code again and again-->

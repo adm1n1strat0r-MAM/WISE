@@ -1,0 +1,272 @@
+{
+    "Web Developer":{
+        "questions": [
+        {
+        "question": "CMS stands for ___.",
+        "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+        "answer": "Content Management System"
+        },
+        {
+        "question": "Which type of data can be stored in WordPress as media?",
+        "options": ["Text", "Document", "Music", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is a feature of WordPress?",
+        "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is an advantage of WordPress?",
+        "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+        "answer": "SEO tools make on-site SEO easier"
+        },
+        {
+        "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+        "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+        "answer": "yousite.WordPress.com"
+        },
+        {
+        "question": "Which database is required by WordPress?",
+        "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+        "answer": "MySQL"
+        },
+        {
+        "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+        "options": ["Site Title", "Username", "Post", "All of these"],
+        "answer": "Post"
+        },
+        {
+        "question": "The Quick draft section in WordPress is used for ___?",
+        "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+        "answer": "Creating mini-posts with titles and small details"
+        },
+        {
+        "question": "Which of these is not seen on the WordPress dashboard?",
+        "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+        "answer": "Welcome text"
+        },
+        {
+        "question": "What is the default post Category for WordPress?",
+        "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+        "answer": "Uncategorized"
+        }
+        ]
+    },
+    "Graphic Designer":{
+        "questions": [
+        {
+        "question": "CMS stands for ___.",
+        "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+        "answer": "Content Management System"
+        },
+        {
+        "question": "Which type of data can be stored in WordPress as media?",
+        "options": ["Text", "Document", "Music", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is a feature of WordPress?",
+        "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is an advantage of WordPress?",
+        "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+        "answer": "SEO tools make on-site SEO easier"
+        },
+        {
+        "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+        "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+        "answer": "yousite.WordPress.com"
+        },
+        {
+        "question": "Which database is required by WordPress?",
+        "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+        "answer": "MySQL"
+        },
+        {
+        "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+        "options": ["Site Title", "Username", "Post", "All of these"],
+        "answer": "Post"
+        },
+        {
+        "question": "The Quick draft section in WordPress is used for ___?",
+        "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+        "answer": "Creating mini-posts with titles and small details"
+        },
+        {
+        "question": "Which of these is not seen on the WordPress dashboard?",
+        "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+        "answer": "Welcome text"
+        },
+        {
+        "question": "What is the default post Category for WordPress?",
+        "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+        "answer": "Uncategorized"
+        }
+        ]
+    },
+    "Logo Designer":{
+        "questions": [
+        {
+        "question": "CMS stands for ___.",
+        "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+        "answer": "Content Management System"
+        },
+        {
+        "question": "Which type of data can be stored in WordPress as media?",
+        "options": ["Text", "Document", "Music", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is a feature of WordPress?",
+        "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is an advantage of WordPress?",
+        "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+        "answer": "SEO tools make on-site SEO easier"
+        },
+        {
+        "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+        "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+        "answer": "yousite.WordPress.com"
+        },
+        {
+        "question": "Which database is required by WordPress?",
+        "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+        "answer": "MySQL"
+        },
+        {
+        "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+        "options": ["Site Title", "Username", "Post", "All of these"],
+        "answer": "Post"
+        },
+        {
+        "question": "The Quick draft section in WordPress is used for ___?",
+        "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+        "answer": "Creating mini-posts with titles and small details"
+        },
+        {
+        "question": "Which of these is not seen on the WordPress dashboard?",
+        "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+        "answer": "Welcome text"
+        },
+        {
+        "question": "What is the default post Category for WordPress?",
+        "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+        "answer": "Uncategorized"
+        }
+        ]
+    },
+    "Digital Marketing":{
+        "questions": [
+        {
+        "question": "CMS stands for ___.",
+        "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+        "answer": "Content Management System"
+        },
+        {
+        "question": "Which type of data can be stored in WordPress as media?",
+        "options": ["Text", "Document", "Music", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is a feature of WordPress?",
+        "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is an advantage of WordPress?",
+        "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+        "answer": "SEO tools make on-site SEO easier"
+        },
+        {
+        "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+        "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+        "answer": "yousite.WordPress.com"
+        },
+        {
+        "question": "Which database is required by WordPress?",
+        "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+        "answer": "MySQL"
+        },
+        {
+        "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+        "options": ["Site Title", "Username", "Post", "All of these"],
+        "answer": "Post"
+        },
+        {
+        "question": "The Quick draft section in WordPress is used for ___?",
+        "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+        "answer": "Creating mini-posts with titles and small details"
+        },
+        {
+        "question": "Which of these is not seen on the WordPress dashboard?",
+        "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+        "answer": "Welcome text"
+        },
+        {
+        "question": "What is the default post Category for WordPress?",
+        "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+        "answer": "Uncategorized"
+        }
+        ]
+    },
+    "Programming":{
+        "questions": [
+        {
+        "question": "CMS stands for ___.",
+        "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+        "answer": "Content Management System"
+        },
+        {
+        "question": "Which type of data can be stored in WordPress as media?",
+        "options": ["Text", "Document", "Music", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is a feature of WordPress?",
+        "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+        "answer": "All of these"
+        },
+        {
+        "question": "Which of these is an advantage of WordPress?",
+        "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+        "answer": "SEO tools make on-site SEO easier"
+        },
+        {
+        "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+        "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+        "answer": "yousite.WordPress.com"
+        },
+        {
+        "question": "Which database is required by WordPress?",
+        "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+        "answer": "MySQL"
+        },
+        {
+        "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+        "options": ["Site Title", "Username", "Post", "All of these"],
+        "answer": "Post"
+        },
+        {
+        "question": "The Quick draft section in WordPress is used for ___?",
+        "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+        "answer": "Creating mini-posts with titles and small details"
+        },
+        {
+        "question": "Which of these is not seen on the WordPress dashboard?",
+        "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+        "answer": "Welcome text"
+        },
+        {
+        "question": "What is the default post Category for WordPress?",
+        "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+        "answer": "Uncategorized"
+        }
+        ]
+    }
+}

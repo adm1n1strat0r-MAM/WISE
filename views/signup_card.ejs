@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Card</title>
+    <link rel="stylesheet" href="../style/login_card.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="../script/firebase.js"></script>
+    <script src="../script/signup.js"></script>
+    <script src="../script/script.js"></script>
+    <style>
+      body {
+        background-color: rgb(248, 248, 248);
+      }
+
+      #signupCard {
+        height: 590px;
+        margin-top: 100px;
+        margin-bottom: 300px;
+        background-color: white;
+      }
+
+      #forgot_pw {
+        margin-top: -4px;
+        padding-left: 30px;
+        font-size: 13px;
+        color: #62646a;
+      }
+
+      #join > p {
+        font-size: 13px;
+      }
+
+      #join > input {
+        width: 88%;
+        height: 30px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding-left: 5px;
+      }
+
+      #join > input:last-child {
+        background-color: #1dbf73;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid #1dbf73;
+        height: 35px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="signupCard">
+      <div id="form_inp">
+        <h2>Join Wise Work</h2>
+
+        <form id="signup" class="signin">
+          <input type="text" id="fname" placeholder="Full Name"/>
+          <input type="text" id="uname" placeholder="Username"/>
+          <input type="text" id="email" placeholder="Email" />
+          <input type="date" id="dob" placeholder="Date of Birth"/>
+          <input type="text" id="address" placeholder="Address"/>
+          <input type="text" id="phone" placeholder="Contact No" />
+          <input type="password" id="pw" placeholder="Set Password" />
+          <br />
+          <p>
+            8 characters or longer. Combine upper and lowercase letters and
+            numbers.
+          </p>
+          <input
+          id="signupButton"
+            type="submit"
+            value="Continue"
+            style="background-color: #550e1f"
+          />
+        </form>
+      </div>
+
+      <div id="last">
+        <p>
+          Already a member?
+          <a href="login" style="color: #550e1f">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import { footer } from "../script/footer.js";
+
+  document.getElementById("footer").innerHTML = footer();
+</script>
+

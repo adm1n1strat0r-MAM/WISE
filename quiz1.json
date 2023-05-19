@@ -1,0 +1,748 @@
+{
+    "Web Developer":{
+        "questions": [
+            {
+            "question": "What is the name of the first page you encounter after logging into your web page?",
+            "options": ["Dashboard", "Security question page", "WP upgrade option", "WPAdmin"],
+            "answer": "Dashboard"
+            },
+            {
+            "question": "How can you get involved with WordPress?",
+            "options": ["Attend Word Camp", "Edit the Codex (documentation)", "Help in the Forums", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What ways to use WordPress?",
+            "options": ["Arcade", "Blog", "Content Management System (CMS)", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What case we cannot recommend WordPress to our client?",
+            "options": ["If client is working on non-CMS base project", "If site wants complex or innovative e-commerce", "In case of enterprise intranet solution", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "Which relational database does WordPress use?",
+            "options": ["MySQL", "Oracle", "PostgresSQL", "MS SQLServer"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "What are the rules that you have to follow for WordPress plugin development?",
+            "options": ["Create a unique name", "Create the plugin's folder", "Create a sub-folder for PHP files, translations, and assets", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What is a WordPress taxonomy?",
+            "options": ["Category", "Tag", "Link Category", "Post Formats", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "In WordPress, what is the user role with the highest privilege level?",
+            "options": ["Administrator", "Author", "Editor", "Contributor"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are rules to follow in WordPress plugin development?",
+            "options": ["Find a unique name", "Setup a prefix (related to your brand)", "Create the plugin's folder", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "CMS stands for ___.",
+            "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+            "answer": "Content Management System"
+            },
+            {
+            "question": "Which type of data can be stored in WordPress as media?",
+            "options": ["Text", "Document", "Music", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is a feature of WordPress?",
+            "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is an advantage of WordPress?",
+            "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+            "answer": "SEO tools make on-site SEO easier"
+            },
+            {
+            "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+            "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+            "answer": "yousite.WordPress.com"
+            },
+            {
+            "question": "Which database is required by WordPress?",
+            "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+            "options": ["Site Title", "Username", "Post", "All of these"],
+            "answer": "Post"
+            },
+            {
+            "question": "The Quick draft section in WordPress is used for ___?",
+            "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+            "answer": "Creating mini-posts with titles and small details"
+            },
+            {
+            "question": "Which of these is not seen on the WordPress dashboard?",
+            "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+            "answer": "Welcome text"
+            },
+            {
+            "question": "What is the default post Category for WordPress?",
+            "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+            "answer": "Uncategorized"
+            },
+            {
+            "question": "What is the difference between WordPress Posts and Pages?",
+            "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+            "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+            },
+            {
+            "question": "You can change your wp themes using?",
+            "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+            "answer": "WordPress Appearance"
+            },
+            {
+            "question": "What is name of configuration file in WordPress ?",
+            "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+            "answer": "wp-config.php"
+            },
+            {
+            "question": "What is a permalink?",
+            "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+            "answer": "Part of your WordPress URL which you set"
+            },
+            {
+            "question": "Which is highest privilege level in WordPress?",
+            "options": ["Contributor", "Author", "Editor", "Administrator"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What task does search engine visibility performs in WordPress?",
+            "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+            "answer": "Discourage search engines from indexing the site"
+            },
+            {
+            "question": "Where can you find permalink settings in WordPress?",
+            "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+            "answer": "Setting -> Permalinks"
+            },
+            {
+            "question": "Which of these is an option to set permalink in WordPress?",
+            "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+            "answer": "All of these"
+            }
+        ]
+    },
+    "Graphic Designer":{
+        "questions": [
+            {
+            "question": "What is the name of the first page you encounter after logging into your web page?",
+            "options": ["Dashboard", "Security question page", "WP upgrade option", "WPAdmin"],
+            "answer": "Dashboard"
+            },
+            {
+            "question": "How can you get involved with WordPress?",
+            "options": ["Attend Word Camp", "Edit the Codex (documentation)", "Help in the Forums", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What ways to use WordPress?",
+            "options": ["Arcade", "Blog", "Content Management System (CMS)", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What case we cannot recommend WordPress to our client?",
+            "options": ["If client is working on non-CMS base project", "If site wants complex or innovative e-commerce", "In case of enterprise intranet solution", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "Which relational database does WordPress use?",
+            "options": ["MySQL", "Oracle", "PostgresSQL", "MS SQLServer"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "What are the rules that you have to follow for WordPress plugin development?",
+            "options": ["Create a unique name", "Create the plugin's folder", "Create a sub-folder for PHP files, translations, and assets", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What is a WordPress taxonomy?",
+            "options": ["Category", "Tag", "Link Category", "Post Formats", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "In WordPress, what is the user role with the highest privilege level?",
+            "options": ["Administrator", "Author", "Editor", "Contributor"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are rules to follow in WordPress plugin development?",
+            "options": ["Find a unique name", "Setup a prefix (related to your brand)", "Create the plugin's folder", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "CMS stands for ___.",
+            "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+            "answer": "Content Management System"
+            },
+            {
+            "question": "Which type of data can be stored in WordPress as media?",
+            "options": ["Text", "Document", "Music", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is a feature of WordPress?",
+            "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is an advantage of WordPress?",
+            "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+            "answer": "SEO tools make on-site SEO easier"
+            },
+            {
+            "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+            "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+            "answer": "yousite.WordPress.com"
+            },
+            {
+            "question": "Which database is required by WordPress?",
+            "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+            "options": ["Site Title", "Username", "Post", "All of these"],
+            "answer": "Post"
+            },
+            {
+            "question": "The Quick draft section in WordPress is used for ___?",
+            "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+            "answer": "Creating mini-posts with titles and small details"
+            },
+            {
+            "question": "Which of these is not seen on the WordPress dashboard?",
+            "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+            "answer": "Welcome text"
+            },
+            {
+            "question": "What is the default post Category for WordPress?",
+            "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+            "answer": "Uncategorized"
+            },
+            {
+            "question": "What is the difference between WordPress Posts and Pages?",
+            "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+            "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+            },
+            {
+            "question": "You can change your wp themes using?",
+            "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+            "answer": "WordPress Appearance"
+            },
+            {
+            "question": "What is name of configuration file in WordPress ?",
+            "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+            "answer": "wp-config.php"
+            },
+            {
+            "question": "What is a permalink?",
+            "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+            "answer": "Part of your WordPress URL which you set"
+            },
+            {
+            "question": "Which is highest privilege level in WordPress?",
+            "options": ["Contributor", "Author", "Editor", "Administrator"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What task does search engine visibility performs in WordPress?",
+            "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+            "answer": "Discourage search engines from indexing the site"
+            },
+            {
+            "question": "Where can you find permalink settings in WordPress?",
+            "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+            "answer": "Setting -> Permalinks"
+            },
+            {
+            "question": "Which of these is an option to set permalink in WordPress?",
+            "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+            "answer": "All of these"
+            }
+        ]
+    },
+    "Logo Designer":{
+        "questions": [
+            {
+            "question": "What is the name of the first page you encounter after logging into your web page?",
+            "options": ["Dashboard", "Security question page", "WP upgrade option", "WPAdmin"],
+            "answer": "Dashboard"
+            },
+            {
+            "question": "How can you get involved with WordPress?",
+            "options": ["Attend Word Camp", "Edit the Codex (documentation)", "Help in the Forums", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What ways to use WordPress?",
+            "options": ["Arcade", "Blog", "Content Management System (CMS)", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What case we cannot recommend WordPress to our client?",
+            "options": ["If client is working on non-CMS base project", "If site wants complex or innovative e-commerce", "In case of enterprise intranet solution", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "Which relational database does WordPress use?",
+            "options": ["MySQL", "Oracle", "PostgresSQL", "MS SQLServer"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "What are the rules that you have to follow for WordPress plugin development?",
+            "options": ["Create a unique name", "Create the plugin's folder", "Create a sub-folder for PHP files, translations, and assets", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What is a WordPress taxonomy?",
+            "options": ["Category", "Tag", "Link Category", "Post Formats", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "In WordPress, what is the user role with the highest privilege level?",
+            "options": ["Administrator", "Author", "Editor", "Contributor"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are rules to follow in WordPress plugin development?",
+            "options": ["Find a unique name", "Setup a prefix (related to your brand)", "Create the plugin's folder", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "CMS stands for ___.",
+            "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+            "answer": "Content Management System"
+            },
+            {
+            "question": "Which type of data can be stored in WordPress as media?",
+            "options": ["Text", "Document", "Music", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is a feature of WordPress?",
+            "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is an advantage of WordPress?",
+            "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+            "answer": "SEO tools make on-site SEO easier"
+            },
+            {
+            "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+            "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+            "answer": "yousite.WordPress.com"
+            },
+            {
+            "question": "Which database is required by WordPress?",
+            "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+            "options": ["Site Title", "Username", "Post", "All of these"],
+            "answer": "Post"
+            },
+            {
+            "question": "The Quick draft section in WordPress is used for ___?",
+            "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+            "answer": "Creating mini-posts with titles and small details"
+            },
+            {
+            "question": "Which of these is not seen on the WordPress dashboard?",
+            "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+            "answer": "Welcome text"
+            },
+            {
+            "question": "What is the default post Category for WordPress?",
+            "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+            "answer": "Uncategorized"
+            },
+            {
+            "question": "What is the difference between WordPress Posts and Pages?",
+            "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+            "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+            },
+            {
+            "question": "You can change your wp themes using?",
+            "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+            "answer": "WordPress Appearance"
+            },
+            {
+            "question": "What is name of configuration file in WordPress ?",
+            "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+            "answer": "wp-config.php"
+            },
+            {
+            "question": "What is a permalink?",
+            "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+            "answer": "Part of your WordPress URL which you set"
+            },
+            {
+            "question": "Which is highest privilege level in WordPress?",
+            "options": ["Contributor", "Author", "Editor", "Administrator"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What task does search engine visibility performs in WordPress?",
+            "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+            "answer": "Discourage search engines from indexing the site"
+            },
+            {
+            "question": "Where can you find permalink settings in WordPress?",
+            "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+            "answer": "Setting -> Permalinks"
+            },
+            {
+            "question": "Which of these is an option to set permalink in WordPress?",
+            "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+            "answer": "All of these"
+            }
+        ]
+    },
+    "Digital Marketing":{
+        "questions": [
+            {
+            "question": "What is the name of the first page you encounter after logging into your web page?",
+            "options": ["Dashboard", "Security question page", "WP upgrade option", "WPAdmin"],
+            "answer": "Dashboard"
+            },
+            {
+            "question": "How can you get involved with WordPress?",
+            "options": ["Attend Word Camp", "Edit the Codex (documentation)", "Help in the Forums", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What ways to use WordPress?",
+            "options": ["Arcade", "Blog", "Content Management System (CMS)", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What case we cannot recommend WordPress to our client?",
+            "options": ["If client is working on non-CMS base project", "If site wants complex or innovative e-commerce", "In case of enterprise intranet solution", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "Which relational database does WordPress use?",
+            "options": ["MySQL", "Oracle", "PostgresSQL", "MS SQLServer"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "What are the rules that you have to follow for WordPress plugin development?",
+            "options": ["Create a unique name", "Create the plugin's folder", "Create a sub-folder for PHP files, translations, and assets", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What is a WordPress taxonomy?",
+            "options": ["Category", "Tag", "Link Category", "Post Formats", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "In WordPress, what is the user role with the highest privilege level?",
+            "options": ["Administrator", "Author", "Editor", "Contributor"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are rules to follow in WordPress plugin development?",
+            "options": ["Find a unique name", "Setup a prefix (related to your brand)", "Create the plugin's folder", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "CMS stands for ___.",
+            "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+            "answer": "Content Management System"
+            },
+            {
+            "question": "Which type of data can be stored in WordPress as media?",
+            "options": ["Text", "Document", "Music", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is a feature of WordPress?",
+            "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is an advantage of WordPress?",
+            "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+            "answer": "SEO tools make on-site SEO easier"
+            },
+            {
+            "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+            "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+            "answer": "yousite.WordPress.com"
+            },
+            {
+            "question": "Which database is required by WordPress?",
+            "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+            "options": ["Site Title", "Username", "Post", "All of these"],
+            "answer": "Post"
+            },
+            {
+            "question": "The Quick draft section in WordPress is used for ___?",
+            "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+            "answer": "Creating mini-posts with titles and small details"
+            },
+            {
+            "question": "Which of these is not seen on the WordPress dashboard?",
+            "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+            "answer": "Welcome text"
+            },
+            {
+            "question": "What is the default post Category for WordPress?",
+            "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+            "answer": "Uncategorized"
+            },
+            {
+            "question": "What is the difference between WordPress Posts and Pages?",
+            "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+            "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+            },
+            {
+            "question": "You can change your wp themes using?",
+            "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+            "answer": "WordPress Appearance"
+            },
+            {
+            "question": "What is name of configuration file in WordPress ?",
+            "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+            "answer": "wp-config.php"
+            },
+            {
+            "question": "What is a permalink?",
+            "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+            "answer": "Part of your WordPress URL which you set"
+            },
+            {
+            "question": "Which is highest privilege level in WordPress?",
+            "options": ["Contributor", "Author", "Editor", "Administrator"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What task does search engine visibility performs in WordPress?",
+            "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+            "answer": "Discourage search engines from indexing the site"
+            },
+            {
+            "question": "Where can you find permalink settings in WordPress?",
+            "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+            "answer": "Setting -> Permalinks"
+            },
+            {
+            "question": "Which of these is an option to set permalink in WordPress?",
+            "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+            "answer": "All of these"
+            }
+        ]
+    },
+    "Programming":{
+        "questions": [
+            {
+            "question": "What is the name of the first page you encounter after logging into your web page?",
+            "options": ["Dashboard", "Security question page", "WP upgrade option", "WPAdmin"],
+            "answer": "Dashboard"
+            },
+            {
+            "question": "How can you get involved with WordPress?",
+            "options": ["Attend Word Camp", "Edit the Codex (documentation)", "Help in the Forums", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What ways to use WordPress?",
+            "options": ["Arcade", "Blog", "Content Management System (CMS)", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What case we cannot recommend WordPress to our client?",
+            "options": ["If client is working on non-CMS base project", "If site wants complex or innovative e-commerce", "In case of enterprise intranet solution", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "Which relational database does WordPress use?",
+            "options": ["MySQL", "Oracle", "PostgresSQL", "MS SQLServer"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "What are the rules that you have to follow for WordPress plugin development?",
+            "options": ["Create a unique name", "Create the plugin's folder", "Create a sub-folder for PHP files, translations, and assets", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What is a WordPress taxonomy?",
+            "options": ["Category", "Tag", "Link Category", "Post Formats", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "In WordPress, what is the user role with the highest privilege level?",
+            "options": ["Administrator", "Author", "Editor", "Contributor"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are rules to follow in WordPress plugin development?",
+            "options": ["Find a unique name", "Setup a prefix (related to your brand)", "Create the plugin's folder", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "CMS stands for ___.",
+            "options": ["Content Management System", "Creator Management System", "Content Manager Source", "None of these"],
+            "answer": "Content Management System"
+            },
+            {
+            "question": "Which type of data can be stored in WordPress as media?",
+            "options": ["Text", "Document", "Music", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is a feature of WordPress?",
+            "options": ["User Management", "Provides tools for Search Engine Optimisation", "Contains multiple themes to style our website", "All of these"],
+            "answer": "All of these"
+            },
+            {
+            "question": "Which of these is an advantage of WordPress?",
+            "options": ["PHP requirement", "SEO tools make on-site SEO easier", "Frequent updates require multiple backup copies", "All of these"],
+            "answer": "SEO tools make on-site SEO easier"
+            },
+            {
+            "question": "Which of these is a free WordPress domain name provided to WordPress.com users?",
+            "options": ["yoursite.WordPress.org", "Yoursite.org", "yousite.WordPress.com", "None of these"],
+            "answer": "yousite.WordPress.com"
+            },
+            {
+            "question": "Which database is required by WordPress?",
+            "options": ["MySQL", "MongoDB", "RDB", "None of these"],
+            "answer": "MySQL"
+            },
+            {
+            "question": "Which of these fields is not required to be filled while first installing the WordPress?",
+            "options": ["Site Title", "Username", "Post", "All of these"],
+            "answer": "Post"
+            },
+            {
+            "question": "The Quick draft section in WordPress is used for ___?",
+            "options": ["Creating mini-posts with titles and small details", "Editing posts", "Creating pages", "All of these"],
+            "answer": "Creating mini-posts with titles and small details"
+            },
+            {
+            "question": "Which of these is not seen on the WordPress dashboard?",
+            "options": ["Site traffic", "Menu options", "Welcome text", "All of these"],
+            "answer": "Welcome text"
+            },
+            {
+            "question": "What is the default post Category for WordPress?",
+            "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+            "answer": "Uncategorized"
+            },
+            {
+            "question": "What is the difference between WordPress Posts and Pages?",
+            "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+            "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+            },
+            {
+            "question": "You can change your wp themes using?",
+            "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+            "answer": "WordPress Appearance"
+            },
+            {
+            "question": "What is name of configuration file in WordPress ?",
+            "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+            "answer": "wp-config.php"
+            },
+            {
+            "question": "What is a permalink?",
+            "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+            "answer": "Part of your WordPress URL which you set"
+            },
+            {
+            "question": "Which is highest privilege level in WordPress?",
+            "options": ["Contributor", "Author", "Editor", "Administrator"],
+            "answer": "Administrator"
+            },
+            {
+            "question": "What are the steps you can take if your WordPress file is hacked?",
+            "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+            "answer": "All of the above"
+            },
+            {
+            "question": "What task does search engine visibility performs in WordPress?",
+            "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+            "answer": "Discourage search engines from indexing the site"
+            },
+            {
+            "question": "Where can you find permalink settings in WordPress?",
+            "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+            "answer": "Setting -> Permalinks"
+            },
+            {
+            "question": "Which of these is an option to set permalink in WordPress?",
+            "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+            "answer": "All of these"
+            }
+        ]
+    }
+}
+  

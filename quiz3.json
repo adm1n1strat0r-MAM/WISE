@@ -1,0 +1,272 @@
+{
+    "Web Developer":{
+        "questions": [
+            {
+                "question": "What is the default post Category for WordPress?",
+                "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+                "answer": "Uncategorized"
+                },
+                {
+                "question": "What is the difference between WordPress Posts and Pages?",
+                "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+                "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+                },
+                {
+                "question": "You can change your wp themes using?",
+                "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+                "answer": "WordPress Appearance"
+                },
+                {
+                "question": "What is name of configuration file in WordPress ?",
+                "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+                "answer": "wp-config.php"
+                },
+                {
+                "question": "What is a permalink?",
+                "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+                "answer": "Part of your WordPress URL which you set"
+                },
+                {
+                "question": "Which is highest privilege level in WordPress?",
+                "options": ["Contributor", "Author", "Editor", "Administrator"],
+                "answer": "Administrator"
+                },
+                {
+                "question": "What are the steps you can take if your WordPress file is hacked?",
+                "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+                "answer": "All of the above"
+                },
+                {
+                "question": "What task does search engine visibility performs in WordPress?",
+                "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+                "answer": "Discourage search engines from indexing the site"
+                },
+                {
+                "question": "Where can you find permalink settings in WordPress?",
+                "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+                "answer": "Setting -> Permalinks"
+                },
+                {
+                "question": "Which of these is an option to set permalink in WordPress?",
+                "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+                "answer": "All of these"
+                }
+        ]
+    },
+    "Graphic Designer":{
+        "questions": [
+            {
+                "question": "What is the default post Category for WordPress?",
+                "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+                "answer": "Uncategorized"
+                },
+                {
+                "question": "What is the difference between WordPress Posts and Pages?",
+                "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+                "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+                },
+                {
+                "question": "You can change your wp themes using?",
+                "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+                "answer": "WordPress Appearance"
+                },
+                {
+                "question": "What is name of configuration file in WordPress ?",
+                "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+                "answer": "wp-config.php"
+                },
+                {
+                "question": "What is a permalink?",
+                "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+                "answer": "Part of your WordPress URL which you set"
+                },
+                {
+                "question": "Which is highest privilege level in WordPress?",
+                "options": ["Contributor", "Author", "Editor", "Administrator"],
+                "answer": "Administrator"
+                },
+                {
+                "question": "What are the steps you can take if your WordPress file is hacked?",
+                "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+                "answer": "All of the above"
+                },
+                {
+                "question": "What task does search engine visibility performs in WordPress?",
+                "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+                "answer": "Discourage search engines from indexing the site"
+                },
+                {
+                "question": "Where can you find permalink settings in WordPress?",
+                "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+                "answer": "Setting -> Permalinks"
+                },
+                {
+                "question": "Which of these is an option to set permalink in WordPress?",
+                "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+                "answer": "All of these"
+                }
+        ]
+    },
+    "Logo Designer":{
+        "questions": [
+            {
+                "question": "What is the default post Category for WordPress?",
+                "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+                "answer": "Uncategorized"
+                },
+                {
+                "question": "What is the difference between WordPress Posts and Pages?",
+                "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+                "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+                },
+                {
+                "question": "You can change your wp themes using?",
+                "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+                "answer": "WordPress Appearance"
+                },
+                {
+                "question": "What is name of configuration file in WordPress ?",
+                "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+                "answer": "wp-config.php"
+                },
+                {
+                "question": "What is a permalink?",
+                "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+                "answer": "Part of your WordPress URL which you set"
+                },
+                {
+                "question": "Which is highest privilege level in WordPress?",
+                "options": ["Contributor", "Author", "Editor", "Administrator"],
+                "answer": "Administrator"
+                },
+                {
+                "question": "What are the steps you can take if your WordPress file is hacked?",
+                "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+                "answer": "All of the above"
+                },
+                {
+                "question": "What task does search engine visibility performs in WordPress?",
+                "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+                "answer": "Discourage search engines from indexing the site"
+                },
+                {
+                "question": "Where can you find permalink settings in WordPress?",
+                "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+                "answer": "Setting -> Permalinks"
+                },
+                {
+                "question": "Which of these is an option to set permalink in WordPress?",
+                "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+                "answer": "All of these"
+                }
+        ]
+    },
+    "Digital Marketing":{
+        "questions": [
+            {
+                "question": "What is the default post Category for WordPress?",
+                "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+                "answer": "Uncategorized"
+                },
+                {
+                "question": "What is the difference between WordPress Posts and Pages?",
+                "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+                "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+                },
+                {
+                "question": "You can change your wp themes using?",
+                "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+                "answer": "WordPress Appearance"
+                },
+                {
+                "question": "What is name of configuration file in WordPress ?",
+                "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+                "answer": "wp-config.php"
+                },
+                {
+                "question": "What is a permalink?",
+                "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+                "answer": "Part of your WordPress URL which you set"
+                },
+                {
+                "question": "Which is highest privilege level in WordPress?",
+                "options": ["Contributor", "Author", "Editor", "Administrator"],
+                "answer": "Administrator"
+                },
+                {
+                "question": "What are the steps you can take if your WordPress file is hacked?",
+                "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+                "answer": "All of the above"
+                },
+                {
+                "question": "What task does search engine visibility performs in WordPress?",
+                "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+                "answer": "Discourage search engines from indexing the site"
+                },
+                {
+                "question": "Where can you find permalink settings in WordPress?",
+                "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+                "answer": "Setting -> Permalinks"
+                },
+                {
+                "question": "Which of these is an option to set permalink in WordPress?",
+                "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+                "answer": "All of these"
+                }
+        ]
+    },
+    "Programming":{
+        "questions": [
+            {
+                "question": "What is the default post Category for WordPress?",
+                "options": ["The first category added on WordPress", "Uncategorized", "No category", "None of these"],
+                "answer": "Uncategorized"
+                },
+                {
+                "question": "What is the difference between WordPress Posts and Pages?",
+                "options": ["There is no difference between Posts and Pages", "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date", "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date", "None of the above"],
+                "answer": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date"
+                },
+                {
+                "question": "You can change your wp themes using?",
+                "options": ["wordpress_setting.php file", "WordPress Settings", "wp_config.php file", "WordPress Appearance"],
+                "answer": "WordPress Appearance"
+                },
+                {
+                "question": "What is name of configuration file in WordPress ?",
+                "options": ["header.php", "wp-settings.php", "wp-config.php", "page.php"],
+                "answer": "wp-config.php"
+                },
+                {
+                "question": "What is a permalink?",
+                "options": ["A popular WordPress Plugin", "The numeric IP address of your WordPress site", "The complete URL of your WordPress site", "Part of your WordPress URL which you set"],
+                "answer": "Part of your WordPress URL which you set"
+                },
+                {
+                "question": "Which is highest privilege level in WordPress?",
+                "options": ["Contributor", "Author", "Editor", "Administrator"],
+                "answer": "Administrator"
+                },
+                {
+                "question": "What are the steps you can take if your WordPress file is hacked?",
+                "options": ["Install security plugins like WP security", "Re-install the latest version of WordPress", "Change password and user-ids for all your users", "All of the above"],
+                "answer": "All of the above"
+                },
+                {
+                "question": "What task does search engine visibility performs in WordPress?",
+                "options": ["Removes site visibility on Google", "Discourage search engines from indexing the site", "Both", "None of these"],
+                "answer": "Discourage search engines from indexing the site"
+                },
+                {
+                "question": "Where can you find permalink settings in WordPress?",
+                "options": ["Setting -> Permalinks", "About -> Permalinks", "Tools -> Links -> Permalinks", "None of these"],
+                "answer": "Setting -> Permalinks"
+                },
+                {
+                "question": "Which of these is an option to set permalink in WordPress?",
+                "options": ["Updating using day and name", "Updating using month and name", "Updating using number", "All of these"],
+                "answer": "All of these"
+                }
+        ]
+    }
+}

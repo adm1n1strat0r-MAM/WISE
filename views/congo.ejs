@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Card</title>
+    <link rel="stylesheet" href="../style/login_card.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="../script/firebase.js"></script>
+    <script src="../script/signin.js"></script>
+    <script src="../script/script.js"></script>
+
+    <style>
+        body {
+            background-color:rgb(248, 248, 248);
+        }
+        #signupCard {
+            margin-top: 90px;
+            margin-bottom: 200px;
+            height: 500px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="signupCard">
+        <div id="form_inp">
+            <h2>Sign In to Wise Work</h2>
+            
+            <form id="signin" class="signin">
+                <input type="text" id="email" placeholder="Email">
+                <input type="password" id="pw" placeholder="Password"> <br>
+                <input type="submit" value="Continue" style="background-color:#550e1f; border-color: #550e1f;">
+            </form>
+        </div>
+
+        <div id="forgot_pw">
+            <p>
+                <input type="checkbox" id="remember">
+
+                Remember Me</p>
+            <p style="color:#550e1f;">Forgot Password?</p>
+        </div>
+
+        <div id="last">
+            <p>Not a member yet? <a href="signup_card" style="color:#550e1f;">Join Now</a></p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    import {footer} from "../script/footer.js"
+
+    document.getElementById("footer").innerHTML = footer()
+
+</script>

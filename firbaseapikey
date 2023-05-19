@@ -1,0 +1,34 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+const firebaseConfig = {
+  apiKey: "AIzaSyB_q5PYkGEgg5e1W3x5epg8oRgovnuF6Q8",
+  authDomain: "wise-work-b0464.firebaseapp.com",
+  projectId: "wise-work-b0464",
+  storageBucket: "wise-work-b0464.appspot.com",
+  messagingSenderId: "441067488463",
+  appId: "1:441067488463:web:f89b853e56d0efb40823ba",
+  measurementId: "G-HP1KN857JL"
+};
+
+// Initialize Firebase
+const database = initializeApp(firebaseConfig);
+const analytics = getAnalytics(database);
+
+
+
+
+
+
+
+
+const {initializeApp , cert} = require('firebase-admin/app');
+const {getFirestore} = require('firebase-admin/firestore');
+
+const serviceAccount = ''
+
+initializeApp({
+    credential: cert(serviceAccount)
+})
+
+const db = getFirestore()
+module.export = {db}

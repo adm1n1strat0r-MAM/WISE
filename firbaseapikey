@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyB_q5PYkGEgg5e1W3x5epg8oRgovnuF6Q8",
-  authDomain: "wise-work-b0464.firebaseapp.com",
-  projectId: "wise-work-b0464",
-  storageBucket: "wise-work-b0464.appspot.com",
-  messagingSenderId: "441067488463",
-  appId: "1:441067488463:web:f89b853e56d0efb40823ba",
-  measurementId: "G-HP1KN857JL"
+  apiKey: "AIzaSyAfIFXdq0F3ZaNNgrGoqWAgqbckb3S51So",
+  authDomain: "wise-e46db.firebaseapp.com",
+  projectId: "wise-e46db",
+  storageBucket: "wise-e46db.appspot.com",
+  messagingSenderId: "752021716261",
+  appId: "1:752021716261:web:156fd4ad79fa68a27a6ecc",
+  measurementId: "G-5NEX5F4RKS"
 };
 
 // Initialize Firebase

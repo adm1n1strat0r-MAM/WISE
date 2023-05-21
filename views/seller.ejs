@@ -162,14 +162,13 @@
         <p><b>Gig Title</b></p>
         <input type="registerAs" id="gigTitle" placeholder="Enter here..." />
 
-        <p><b>Address</b></p>
-        <input type="text" id="address" placeholder="Address" />
-
-        <p><b>Date of birth</b></p>
-        <input type="date" id="dob"/>
-
-        <p><b>Languages you speak</b></p>
-        <input type="text" id="languages" placeholder="Enter here..." />
+        <select id="languages">
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+          <option value="German">German</option>
+          <!-- Add more languages here -->
+        </select>
 
         <p><b>Price</b></p><span id="priceWarn" style="color: red;"></span>
         <input type="number" id="price" placeholder="$" />
@@ -178,7 +177,7 @@
         <input type="file" id="myFile" name="filename">
 
         <!-- <input type="text" placeholder="About You" class="bio" /> -->
-        <label for="freeform"><b>About You:</b></label>
+        <label for="freeform"><b>Description:</b></label>
         <br />
 
         <textarea id="freeform" name="freeform" rows="4" cols="25" placeholder="Enter here..."></textarea>

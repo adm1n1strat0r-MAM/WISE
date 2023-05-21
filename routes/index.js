@@ -5,9 +5,17 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 router.get("/index", (req, res) => {
   res.redirect("/");
 });
-  
+
 router.get("/", (req, res) => {
   res.render("index");
+});
+
+router.get("/profile", (req, res) => {
+  res.render("profile");
+});
+
+router.get("/editProfile", (req, res) => {
+  res.render("editProfile");
 });
 
 router.get("/login", (req, res) => {
@@ -19,11 +27,28 @@ router.get("/chat", (req, res) => {
   res.render("chat");
 });
 
-router.get("/quiz", (req, res)=>{
+router.get("/quiz", (req, res) => {
   res.render("quiz");
 });
-router.get("/admin", (req, res)=>{
+router.get("/admin", (req, res) => {
   res.render("admin");
+});
+
+
+
+// Route handler for /admin/userDetail
+router.get('/admin/userDetail', (req, res) => {
+  const {email, name, phone, address, dob} = req.query; // Retrieve the email parameter from the query string
+
+  res.render('admin_userDetail', { email, name, address, phone, dob });
+
+});
+
+router.get('/admin/editProfile', (req, res) => {
+  const {email, name, phone, address, dob} = req.query; // Retrieve the email parameter from the query string
+
+  res.render('admin_editProfile', { email, name, address, phone, dob });
+
 });
 
 
@@ -33,7 +58,7 @@ router.get("/homepage_first_slider", (req, res) => {
 router.get("/result", (req, res) => {
   var jsonString = req.query.data;
   var myObject = JSON.parse(jsonString);
-  res.render("result", {data: myObject});
+  res.render("result", { data: myObject });
 });
 router.get("/seller/:someName", (req, res) => {
   const someName = req.params.someName
@@ -74,11 +99,11 @@ router.post("/accountID", async (req, res) => {
   // const updatedAccount = await stripe.accounts.update(account.id, {
   //   capabilities: capabilities,
   // });
-  
+
   res.send({
     accountID: account.id,
     accountLink: accountLink,
-    
+
   });
 });
 

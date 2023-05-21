@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectElement = document.getElementById("fields");
   const sellerForm = document.getElementById("sellerForm");
   const gigTitle = document.getElementById("gigTitle");
-  const address = document.getElementById("address");
-  const dob = document.getElementById("dob");
   const languages = document.getElementById("languages");
   const freeform = document.getElementById("freeform");
   const price = document.getElementById("price");
@@ -39,8 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitFORM = (
     selectedValue,
     gigTitle,
-    address,
-    dob,
     languages,
     myFile,
     freeform,
@@ -68,8 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 department:
                   firebase.firestore.FieldValue.arrayUnion(selectedValue),
                 gigTitle: firebase.firestore.FieldValue.arrayUnion(gigTitle),
-                address: address,
-                dob: dob,
                 languages: languages,
                 price: firebase.firestore.FieldValue.arrayUnion(price),
                 about: firebase.firestore.FieldValue.arrayUnion(freeform),
@@ -151,8 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedValue_ =
       selectElement.options[selectElement.selectedIndex].value;
     const gigTitle_ = gigTitle.value;
-    const address_ = address.value;
-    const dob_ = dob.value;
     const languages_ = languages.value;
     const freeform_ = freeform.value;
     const myFile = document.getElementById("myFile").files[0];
@@ -160,8 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
     submitFORM(
       selectedValue_,
       gigTitle_,
-      address_,
-      dob_,
       languages_,
       myFile,
       freeform_,

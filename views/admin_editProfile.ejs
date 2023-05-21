@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wise Work - Freelance Services Marketplace</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="../script/firebase.js"></script>
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <style>
+        .navbar {
+            background-color: #550e1f;
+            color: white;
+        }
+
+        .navbar-logo {
+            margin-left: 3%;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .navbar-logo:hover {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-style {
+            color: #550e1f;
+            border: 1px;
+            border-color: white;
+            border-style: solid;
+        }
+
+        .btn-style:hover {
+            color: white;
+            background-color: #550e1f;
+        }
+
+        .navbar-log {
+            display: inline-block;
+            margin-left: 10%;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .navbar-log:hover {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-link {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        .navbar-link:hover {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar from bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-link" href="/admin" style="font-size: 2rem;">Wise Work</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="navbar-link" href="chat?admin=true">Customer Complaints</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-link" id="signout-button">Sign Out</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="col-lg-8 mx-auto" style="margin-top: 50px;">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Full Name</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="nameInput" type="text" value="<%= name%>" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="emailInput" type="text" value="<%= email%>" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Phone</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="phoneInput" type="text" value="<%= phone%>" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">DOB</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="dobInput" type="text" value="<%= dob%>" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Address</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="addressInput" type="text" value="<%= address%>" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button class="btn btn-primary" onclick="updateUserData()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var db = firebase.firestore();
+        // Function to update user data in Firestore
+        function updateUserData() {
+            // Retrieve the updated input field values
+            const nameInput = document.getElementById('nameInput').value;
+            const emailInput = document.getElementById('emailInput').value;
+            const phoneInput = document.getElementById('phoneInput').value;
+            const dobInput = document.getElementById('dobInput').value;
+            const addressInput = document.getElementById('addressInput').value;
+
+            // Query the Firestore collection for the user with the provided email
+            db.collection("users").where("email", "==", emailInput)
+                .get()
+                .then((querySnapshot) => {
+                    if (querySnapshot.empty) {
+                        console.log("No user found with the provided email.");
+                        return;
+                    }
+
+                    // Assuming there's only one document matching the query
+                    const doc = querySnapshot.docs[0];
+
+                    // Update the Firestore document with the new data
+                    doc.ref.update({
+                        name: nameInput,
+                        email: emailInput,
+                        phone: phoneInput,
+                        dob: dobInput,
+                        address: addressInput
+                    })
+                        .then(() => {
+                            console.log("User data updated successfully");
+                            // Redirect to a success page or perform any additional actions
+                            window.location.href = "/admin";
+                        })
+                        .catch((error) => {
+                            console.error("Error updating user data:", error);
+                        });
+                })
+                .catch((error) => {
+                    console.error("Error retrieving user data:", error);
+                });
+        }
+
+
+    </script>
+
+
+    <div id="footer"></div>
+</body>
+
+</html>
+
+<script type="module">
+    import { footer } from "../script/footer.js";
+    document.getElementById("footer").innerHTML = footer();
+</script>
+
+
+<!--This script calls footer js file and loads it in the last dic having id "footer". We do this so we don't have to write code again and again-->

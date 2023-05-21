@@ -1,10 +1,10 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyCc5lvVR-wDDKYNUGNPCDOgLhKKaj37arc",
-    authDomain: "wise-fbf76.firebaseapp.com",
-    projectId: "wise-fbf76",
-    storageBucket: "wise-fbf76.appspot.com",
-    messagingSenderId: "175823843959",
-    appId: "1:175823843959:web:a6bf6f4c702d187fda8c72",
-    measurementId: "G-Y3PMW73XMJ",
-  };
+  apiKey: "AIzaSyAfIFXdq0F3ZaNNgrGoqWAgqbckb3S51So",
+  authDomain: "wise-e46db.firebaseapp.com",
+  projectId: "wise-e46db",
+  storageBucket: "wise-e46db.appspot.com",
+  messagingSenderId: "752021716261",
+  appId: "1:752021716261:web:156fd4ad79fa68a27a6ecc",
+  measurementId: "G-5NEX5F4RKS"
+};
 firebase.initializeApp(firebaseConfig);

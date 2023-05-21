@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const UnameInput = document.getElementById("uname");
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("pw");
+  const dobInput = document.getElementById("dob");
+  const addressInput = document.getElementById("address");
+  const phoneInput = document.getElementById("phone");
 
   // firebase.auth().onAuthStateChanged((user) => {
   //   if (user) {
@@ -26,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
 
   // Sign up function
-  const signUp = (email, password, Uname, Fname) => {
+  const signUp = (email, password, Uname, Fname, dob, address, phone) => {
     const seller = {
       email: email,
       type: "standard",
@@ -61,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 username: Uname,
                 email: email,
                 sellerAccountID: sellerAccountID,
+                dob: dob,
+                address: address,
+                phone: phone,
               })
               .then(() => {
                 console.log(user);
@@ -88,8 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const Fname = FnameInput.value;
     const email = emailInput.value;
     const password = passwordInput.value;
+    const dob = dobInput.value;
+    const address = addressInput.value;
+    const phone = phoneInput.value;
 
-    signUp(email, password, Uname, Fname);
+    signUp(email, password, Uname, Fname, dob, address, phone);
   });
 });
 

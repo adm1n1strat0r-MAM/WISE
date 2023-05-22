@@ -113,6 +113,14 @@
     .submit-button:hover {
       background-color: #7a2539;
     }
+    #languages {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    width: 260px;
+
+  }
   </style>
 </head>
 
@@ -152,7 +160,7 @@
     
    
 
-  <div id="signupCard" style="margin-top: 10%; height: 50%">
+  <div id="signupCard" style="margin-top: 50px; height: 50%">
     <div id="form_inp">
       <h2>Become a seller</h2>
 
@@ -167,13 +175,12 @@
         <input type="registerAs" id="gigTitle" placeholder="Enter here..." />
 
         <p><b>Language you speak</b></p>
-        <select id="languages">
+        <select id="languages" class="dropbtn">
           <option value="English">English</option>
           <option value="Spanish">Spanish</option>
           <option value="French">French</option>
           <option value="German">German</option>
-          <!-- Add more languages here -->
-        </select>
+        </select> 
 
         <p><b>Price</b></p><span id="priceWarn" style="color: red;"></span>
         <input type="number" id="price" placeholder="$" />

@@ -1,4 +1,14 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+ 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -260,10 +270,7 @@ Image-box is used for the styles of transitions*/
   text-align: center;
   margin-top: -170px;
 }
-.job-cards{
-  margin-left: 3vh;
-  margin-right: 3vh;
-}
+
 /*z-index is used to change the orientations as making the items appearing to be closer to the screen or further away by overlapping
 filter property is used to apply various visual effects, such as blurring, brightness, contrast, and more, to an element.*/
 #fade {
@@ -327,59 +334,104 @@ filter property is used to apply various visual effects, such as blurring, brigh
 }
 
 #home-page-image-container {
-  display: inline-block;
+  display: flex;
   justify-content: baseline;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   width:90%;
   margin-top: 40px;
-  margin-left: 10vh;
+ 
 }
+
+
 #skillImage{
   border-radius: 15px;
   width: 100%;
-  float: right;
-  height: 540px;
+  height: 520px;
+  margin-left: 80px;
 }
-
+@media (max-width:576px) {
+  #skillImage {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width:280px) {
+  #skillImage {
+    width: 100%;
+    height: 70%;
+  }
+}
+.image_text_portion {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .home-page-image-portion{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   vertical-align: top;
-  margin-left: 30vh;
+ 
 }
 
+@media (max-width:768px) {
+  #home-page-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+
+@media (max-width:380px) {
+  #home-page-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
 @media (max-width:1656px) and (min-width:1580px){
   .home-page-image-portion{
-    display: inline-block;
-    margin-left: 35vh;
+    display: flex;
     width: 92vh;
   }
 }
 
 @media (max-width:1580px) and (min-width:1400px){
   .home-page-image-portion{
-    display: inline-block;
-    margin-left: 35vh;
+    display: flex;
     width: 80vh;
   }
 }
 @media (max-width:1400px) and (min-width:1000px){
   .home-page-image-portion{
-    display: inline-block;
-    margin-left: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 70vh;
   }
 }
-@media (max-width:1000px){
-  .home-page-image-portion{
-    display: block;
-    margin-left: 1vh;
-  }
-}
+
 
 .home-page-side-text {
-  width: 30%;
-  
-  float: left;
+ margin-right: 80px;
+
+}
+@media (max-width:768px) {
+  .home-page-side-text-heading {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+
 }
 
 .home-page-side-text-heading {
@@ -391,48 +443,87 @@ filter property is used to apply various visual effects, such as blurring, brigh
   font-weight: 700;
   margin-bottom: 20px;
 }
+@media (max-width:768px) {
+  
+.home-page-side-text-heading {
+  width: 100%;
+  font-size: 31px;
 
+}
+}
+@media (max-width:576px) {
+  
+  .home-page-side-text-heading {
+    width: 100%;
+    font-size: 20px;
+  
+  }
+ 
+}
+@media (max-width:380px) {
+  
+  .home-page-side-text-heading {
+    width: 100%;
+    font-size: 18px;
+  
+  }
+ 
+}
+@media (max-width:280px) {
+  
+  .home-page-side-text-heading {
+    width: 100%;
+    font-size: 14px;
+  
+  }
+ 
+}
 .home-page-side-text-div {
   color: #404145;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
+@media (max-width:576px) {
+  
+  .home-page-side-text-div { 
+    font-size: 16px;
+  }
+}
+@media (max-width:380px) {
+  
+  .home-page-side-text-div { 
+    font-size: 14px;
+  }
+}
 
+@media (max-width:280px) {
+  
+  .home-page-side-text-div { 
+    font-size: 13p x;
+  }
+}
+
+@media (max-width:380px) {
+  
+  svg { 
+    width: 18px;
+  }
+}
 .home-page-side-text-div-child {
   font-size: 18px;
   line-height: 26px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-@media(max-width:580px){
-  .home-page-side-text-heading {
-    width: 65%;
-    font-size: 4vh;
-    line-height: 120%;
-    color: #404145;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .home-page-side-text-div {
-    color: #404145;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 3vh
-  }
-  .home-page-side-text-div-child {
-    font-size: 3vh;
-    line-height: 26px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .home-page-side-text {
-    width: 55%;
-    margin-left: 1px;
-    display: inline-block;
+
+@media (max-width:576px) {
+  
+  .home-page-side-text-div-child { 
+    font-size: 14px;
   }
 }
+
 
 
 

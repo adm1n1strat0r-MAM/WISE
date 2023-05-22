@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(email);
         console.log(password);
 
-        if(email == adminEmail){
+        if (email == adminEmail) {
           window.location = "admin";
         }
-        else{
+        else {
           window.location = "index"; // Redirect to the home page
         }
       })
@@ -41,7 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // Failed to sign in
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert(errorMessage);
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: errorMessage,
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        });
       });
   };
 

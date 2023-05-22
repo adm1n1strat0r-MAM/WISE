@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img class="card-img-top" src=${data["image"][i]["url"]} style="width:360px; height:250px">
                     <div class="card-body">
                         <h5 class="card-title">${data["gigTitle"][i]}</h5>
-                        <p class="card-text">${data["about"][i]}</p>
+                        <p class="card-text">${data["Description"][i]}</p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">${data["price"][i]}$</small>

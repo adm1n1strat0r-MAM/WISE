@@ -36,6 +36,8 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Add the following script tag to the head or body section of your HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         .navbar {
             background-color: #550e1f;
@@ -176,50 +178,71 @@
 
 
     <script>
-        var db = firebase.firestore();
-        // Function to update user data in Firestore
-        function updateUserData() {
-            // Retrieve the updated input field values
-            const nameInput = document.getElementById('nameInput').value;
-            const emailInput = document.getElementById('emailInput').value;
-            const phoneInput = document.getElementById('phoneInput').value;
-            const dobInput = document.getElementById('dobInput').value;
-            const addressInput = document.getElementById('addressInput').value;
-
-            // Query the Firestore collection for the user with the provided email
-            db.collection("users").where("email", "==", emailInput)
-                .get()
-                .then((querySnapshot) => {
-                    if (querySnapshot.empty) {
-                        console.log("No user found with the provided email.");
-                        return;
+        firebase.auth().onAuthStateChanged((user) => {
+            if (!user) {
+                // User is not logged in, redirect to the login page
+                window.location = "http://localhost:4000/login";
+                // Check if the user's email is not admin@wisework.com
+            } else if (user.email !== "admin@wisework.com") {
+                // Show a customized alert using SweetAlert2
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Access Denied',
+                    text: 'You are not authorized to access this page.',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect the user to a different page or take any other desired action
+                        window.location = "http://localhost:4000/";
                     }
+                });
+            } else {
+                var db = firebase.firestore();
+                // Function to update user data in Firestore
+                function updateUserData() {
+                    // Retrieve the updated input field values
+                    const nameInput = document.getElementById('nameInput').value;
+                    const emailInput = document.getElementById('emailInput').value;
+                    const phoneInput = document.getElementById('phoneInput').value;
+                    const dobInput = document.getElementById('dobInput').value;
+                    const addressInput = document.getElementById('addressInput').value;
 
-                    // Assuming there's only one document matching the query
-                    const doc = querySnapshot.docs[0];
+                    // Query the Firestore collection for the user with the provided email
+                    db.collection("users").where("email", "==", emailInput)
+                        .get()
+                        .then((querySnapshot) => {
+                            if (querySnapshot.empty) {
+                                console.log("No user found with the provided email.");
+                                return;
+                            }
 
-                    // Update the Firestore document with the new data
-                    doc.ref.update({
-                        name: nameInput,
-                        email: emailInput,
-                        phone: phoneInput,
-                        dob: dobInput,
-                        address: addressInput
-                    })
-                        .then(() => {
-                            console.log("User data updated successfully");
-                            // Redirect to a success page or perform any additional actions
-                            window.location.href = "/admin";
+                            // Assuming there's only one document matching the query
+                            const doc = querySnapshot.docs[0];
+
+                            // Update the Firestore document with the new data
+                            doc.ref.update({
+                                name: nameInput,
+                                email: emailInput,
+                                phone: phoneInput,
+                                dob: dobInput,
+                                address: addressInput
+                            })
+                                .then(() => {
+                                    console.log("User data updated successfully");
+                                    // Redirect to a success page or perform any additional actions
+                                    window.location.href = "/admin";
+                                })
+                                .catch((error) => {
+                                    console.error("Error updating user data:", error);
+                                });
                         })
                         .catch((error) => {
-                            console.error("Error updating user data:", error);
+                            console.error("Error retrieving user data:", error);
                         });
-                })
-                .catch((error) => {
-                    console.error("Error retrieving user data:", error);
-                });
-        }
-
+                }
+            }
+        });
 
     </script>
 

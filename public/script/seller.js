@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 gigTitle: firebase.firestore.FieldValue.arrayUnion(gigTitle),
                 languages: languages,
                 price: firebase.firestore.FieldValue.arrayUnion(price),
-                about: firebase.firestore.FieldValue.arrayUnion(freeform),
+                Description: firebase.firestore.FieldValue.arrayUnion(freeform),
                 image: firebase.firestore.FieldValue.arrayUnion({
                   name: fileName,
                   url: url,

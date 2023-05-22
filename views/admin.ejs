@@ -36,6 +36,9 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- Add the following script tag to the head or body section of your HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <style>
     .navbar {
       background-color: #550e1f;
@@ -119,112 +122,134 @@
 
   <div style="margin: 50px;" id="document-data"></div>
   <script>
-
-    var db = firebase.firestore();
-    const abc = document.getElementById('document-data');
-
-    var users = db.collection("users");
-    var tempHTML = `<table id="userTable" class="table table-striped table-hover"><tr><th>Email</th><th>Name</th><th>Address</th><th>Phone</th><th>DoB</th><th>Actions</th></tr>`;
-    users
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          if (doc.data()['address'] != null)
-            tempHTML += `<tr><td>${doc.data()['email']}</td><td>${doc.data()['name']}</td><td>${doc.data()['address']}</td><td>${doc.data()['phone']}</td><td>${doc.data()['dob']}</td>
-                  <td><button type="button" class="btn btn-primary edit">Edit</button> | <button type="button" class="btn btn-success detail">Detail</button> | <button type="button" class="btn btn-danger delete">Delete</button></td></tr>`
-
-        })
-
-      }).then(() => {
-        tempHTML += `</table>`;
-        abc.innerHTML += tempHTML;
-
-
-        const userTable = document.getElementById('userTable');
-
-        // Add a click event listener to the userTable and use event delegation to handle the delete button clicks
-        userTable.addEventListener('click', function (event) {
-          // Check if the clicked element has a class of 'edit' or 'detail'
-          if (event.target.classList.contains('edit')) {
-            // Get the corresponding table row
-            const row = event.target.closest('tr');
-            // Get the email value from the first cell of the row
-            const email = row.cells[0].textContent;
-            // Get the user document based on the email from Firestore
-            const usersRef = db.collection('users');
-            const query = usersRef.where('email', '==', email);
-
-            query.get()
-              .then((snapshot) => {
-                if (snapshot.empty) {
-                  console.log('No user found with the provided email.');
-                  // Handle the case where no user is found and render an appropriate response
-                } else {
-                  // Retrieve the user data from the snapshot
-                  const userData = snapshot.docs[0].data();
-
-                  // Redirect to the detail page with the email parameter
-                  window.location.href = `/admin/editProfile?email=${userData.email}&name=${userData.name}&address=${userData.address}&phone=${userData.phone}&dob=${userData.dob}`;
-                }
-              })
-              .catch((error) => {
-                console.error('Error retrieving user data:', error);
-                // Handle the error and render an appropriate response
-              });
-          } else if (event.target.classList.contains('detail')) {
-            // Get the corresponding table row
-            const row = event.target.closest('tr');
-            // Get the email value from the first cell of the row
-            const email = row.cells[0].textContent;
-            // Get the user document based on the email from Firestore
-            const usersRef = db.collection('users');
-            const query = usersRef.where('email', '==', email);
-
-            query.get()
-              .then((snapshot) => {
-                if (snapshot.empty) {
-                  console.log('No user found with the provided email.');
-                  // Handle the case where no user is found and render an appropriate response
-                } else {
-                  // Retrieve the user data from the snapshot
-                  const userData = snapshot.docs[0].data();
-
-                  // Redirect to the detail page with the email parameter
-                  window.location.href = `/admin/userDetail?email=${userData.email}&name=${userData.name}&address=${userData.address}&phone=${userData.phone}&dob=${userData.dob}`;
-                }
-              })
-              .catch((error) => {
-                console.error('Error retrieving user data:', error);
-                // Handle the error and render an appropriate response
-              });
-
-          }
-          // Check if the clicked element has a class of 'delete'
-          else if (event.target.classList.contains('delete')) {
-            // Get the corresponding table row
-            const row = event.target.closest('tr');
-            // Get the email value from the first cell of the row
-            const email = row.cells[0].textContent;
-
-            // Call the delete function with the email value
-            deleteDocument(email)
-              .then(() => {
-                // Remove the table row from the DOM
-                row.remove();
-                console.log('Document deleted successfully.');
-              })
-              .catch((error) => {
-                console.error('Error deleting document:', error);
-              });
+    firebase.auth().onAuthStateChanged((user) => {
+      if (!user) {
+        // User is not logged in, redirect to the login page
+        window.location = "http://localhost:4000/login";
+        // Check if the user's email is not admin@wisework.com
+      } else if (user.email !== "admin@wisework.com") {
+        // Show a customized alert using SweetAlert2
+        Swal.fire({
+          icon: 'error',
+          title: 'Access Denied',
+          text: 'You are not authorized to access this page.',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Redirect the user to a different page or take any other desired action
+            window.location = "http://localhost:4000/";
           }
         });
+      } else {
 
 
-      })
-      .catch(function (error) {
-        console.log("Error getting document:", error);
-      });
+        var db = firebase.firestore();
+        const abc = document.getElementById('document-data');
 
+        var users = db.collection("users");
+        var tempHTML = `<table id="userTable" class="table table-striped table-hover"><tr><th>Email</th><th>Name</th><th>Address</th><th>Phone</th><th>DoB</th><th>Gig Titles</th><th>Actions</th></tr>`;
+        users
+          .get()
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+              if (doc.data()['address'] != null)
+                tempHTML += `<tr><td>${doc.data()['email']}</td><td>${doc.data()['name']}</td><td>${doc.data()['address']}</td><td>${doc.data()['phone']}</td><td>${doc.data()['dob']}</td><td>${doc.data()['gigTitle']}</td>
+                  <td><button type="button" class="btn btn-primary edit">Edit</button> | <button type="button" class="btn btn-success detail">Detail</button> | <button type="button" class="btn btn-danger delete">Delete</button></td></tr>`
+
+            })
+
+          }).then(() => {
+            tempHTML += `</table>`;
+            abc.innerHTML += tempHTML;
+
+
+            const userTable = document.getElementById('userTable');
+
+            // Add a click event listener to the userTable and use event delegation to handle the delete button clicks
+            userTable.addEventListener('click', function (event) {
+              // Check if the clicked element has a class of 'edit' or 'detail'
+              if (event.target.classList.contains('edit')) {
+                // Get the corresponding table row
+                const row = event.target.closest('tr');
+                // Get the email value from the first cell of the row
+                const email = row.cells[0].textContent;
+                // Get the user document based on the email from Firestore
+                const usersRef = db.collection('users');
+                const query = usersRef.where('email', '==', email);
+
+                query.get()
+                  .then((snapshot) => {
+                    if (snapshot.empty) {
+                      console.log('No user found with the provided email.');
+                      // Handle the case where no user is found and render an appropriate response
+                    } else {
+                      // Retrieve the user data from the snapshot
+                      const userData = snapshot.docs[0].data();
+
+                      // Redirect to the detail page with the email parameter
+                      window.location.href = `/admin/editProfile?email=${userData.email}&name=${userData.name}&address=${userData.address}&phone=${userData.phone}&dob=${userData.dob}`;
+                    }
+                  })
+                  .catch((error) => {
+                    console.error('Error retrieving user data:', error);
+                    // Handle the error and render an appropriate response
+                  });
+              } else if (event.target.classList.contains('detail')) {
+                // Get the corresponding table row
+                const row = event.target.closest('tr');
+                // Get the email value from the first cell of the row
+                const email = row.cells[0].textContent;
+                // Get the user document based on the email from Firestore
+                const usersRef = db.collection('users');
+                const query = usersRef.where('email', '==', email);
+
+                query.get()
+                  .then((snapshot) => {
+                    if (snapshot.empty) {
+                      console.log('No user found with the provided email.');
+                      // Handle the case where no user is found and render an appropriate response
+                    } else {
+                      // Retrieve the user data from the snapshot
+                      const userData = snapshot.docs[0].data();
+
+                      // Redirect to the detail page with the email parameter
+                      window.location.href = `/admin/userDetail?email=${userData.email}&name=${userData.name}&address=${userData.address}&phone=${userData.phone}&dob=${userData.dob}`;
+                    }
+                  })
+                  .catch((error) => {
+                    console.error('Error retrieving user data:', error);
+                    // Handle the error and render an appropriate response
+                  });
+
+              }
+              // Check if the clicked element has a class of 'delete'
+              else if (event.target.classList.contains('delete')) {
+                // Get the corresponding table row
+                const row = event.target.closest('tr');
+                // Get the email value from the first cell of the row
+                const email = row.cells[0].textContent;
+
+                // Call the delete function with the email value
+                deleteDocument(email)
+                  .then(() => {
+                    // Remove the table row from the DOM
+                    row.remove();
+                    console.log('Document deleted successfully.');
+                  })
+                  .catch((error) => {
+                    console.error('Error deleting document:', error);
+                  });
+              }
+            });
+
+
+          })
+          .catch(function (error) {
+            console.log("Error getting document:", error);
+          });
+      }
+    });
     function deleteDocument(email) {
       // Get a reference to the Firestore collection
       const collectionRef = firebase.firestore().collection('users');

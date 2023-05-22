@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobsGrid = document.getElementById("homepage-top-gigs");
   let container = document.getElementById("Image-box2");
 
-  tempHTML = `<div class="card-deck">`;
+  tempHTML = `<div class="card-deck"  style="margin:0px 50px;">`;
 
   users.get().then((querySnapshot) => {
     var j = 0;
@@ -49,14 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       for (let i in data["department"]) {
         let temp = `
-                    <div class="card">
-                    <img class="card-img-top" src=${data["image"][i]["url"]} >
-                    <div class="card-body">
-                      <h5 class="card-title">${data["gigTitle"][i]}</h5>
-                    </div></div>
-                                
-                      
-                  `;
+          <div id="slider-container">
+            <div class="slider">
+                <div class="card">
+                  <img class="card-img-top" src="${data["image"][i]["url"]}" style="width:200px; height:200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">${data["gigTitle"][i]}</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+        `;
         tempHTML += temp;
 
         break;
@@ -69,4 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+$(document).ready(function () {
+  $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+  });
+});
 

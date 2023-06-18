@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const db = firebase.firestore();
   const users = db.collection("users");
   const jobsGrid = document.getElementById("jobs-grid");
-  const exploreType = document.getElementById("exploreType").innerHTML;
+  // const exploreType = document.getElementById("exploreType").innerHTML;
+  const exploreType = "all-projects"
   console.log(exploreType);
 
   users

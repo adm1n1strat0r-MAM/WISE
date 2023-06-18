@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
         questions[0].style.left = "-650px";
         questions[1].style.left = "15px";
       });
-      let seconds = 60; // Timer duration in seconds (1 hour)
+      let seconds = 600; // Timer duration in seconds (10 minutes)
       let intervalId; // Variable to store the interval ID
 
       function startTimer() {
